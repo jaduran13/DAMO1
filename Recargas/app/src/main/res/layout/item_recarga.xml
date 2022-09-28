@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMonto"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="12345678"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvMonto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:text="500"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@id/tvNumero"
+        android:layout_marginStart="50dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
