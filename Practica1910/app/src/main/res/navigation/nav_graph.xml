@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="ni.edu.uca.practica1910.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/menu_persona"
+            app:destination="@id/persona" />
+        <action
+            android:id="@+id/menu_producto"
+            app:destination="@id/producto" />
+    </fragment>
+    <fragment
+        android:id="@+id/persona"
+        android:name="ni.edu.uca.practica1910.Persona"
+        android:label="fragment_persona"
+        tools:layout="@layout/fragment_persona" />
+    <fragment
+        android:id="@+id/producto"
+        android:name="ni.edu.uca.practica1910.Producto"
+        android:label="fragment_producto"
+        tools:layout="@layout/fragment_producto" />
+</navigation>
